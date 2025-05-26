@@ -1,0 +1,22 @@
+	sf::Vector2f baseMenor = { 50.f, 20.f };
+	sf::Vector2f base = { 100.f, 20.f };
+	sf::Vector2f baseMaior = { 150.f, 20.f };
+	sf::Color corBase = sf::Color(255, 13, 5);
+	//sf::Color corBaseCorrer = sf::Color(57, 235, 193);
+	sf::Color corBasePulo = sf::Color(101, 193, 55);
+	sf::Color corParede = sf::Color(255, 153, 51);
+
+	playerThings["player"] = { {20.f, 40.f}, {0.f, 960.f}, sf::Color(144, 143, 164) };
+	mapItems["ground"] = { {1920.f, 100.f}, {0.f, 1030.f}, sf::Color(55, 1, 51) };
+	mapItems["second_ground"] = { {300.f, 110.f}, {1050.f, 920.f}, sf::Color(255, 13, 51) };
+	mapItems["test_ground"] = { {20.f, 110.f}, {1350.f, 920.f}, sf::Color(255, 13, 51) };
+	mapItems["third_ground"] = { {30.f, 110.f}, {1370.f, 920.f}, sf::Color(255, 13, 51) };
+	mapItems["fake_ground"] = { {100.f, 110.f}, {1400.f, 920.f}, sf::Color(255, 13, 51) };
+	mapItems["fourth_ground"] = { {420.f, 110.f}, {1500.f, 920.f}, sf::Color(255, 13, 51) };
+	mapItems["first_platform"] = { base, {0.f, 1010.f}, corBase };
+	mapItems["second_platform"] = { base, {200.f, 970.f}, corBase };
+	mapItems["second_platform"].moveRight = true;
+	mapItems["second_platform"].moveStats.y = 300.f;
+	mapItems["third_platform"] = { base, {950.f, 930.f}, corBase };
+	mapItems["third_platform"].moveLeft = true;
+	mapItems["third_platform"].moveStats.x = 300.f;
