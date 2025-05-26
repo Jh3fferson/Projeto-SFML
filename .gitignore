@@ -16,5 +16,5 @@ ipch/
 *.sdf
 *.VC.db
 *.VC.VC.opendb
-*.vcxproj
-*.vcxproj.filters
+SFML Tests.vcxproj
+SGML Tests.vcxproj.filters
